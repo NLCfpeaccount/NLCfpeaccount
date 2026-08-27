@@ -1,55 +1,111 @@
-<h1 align="center">Hi, I'm building ML systems from first principles 👋</h1>
+<h1 align="center">Hi 👋, I'm building ML systems from first principles</h1>
 
 <p align="center">
 Final-year B.Tech (AI & Data Science) student in Chennai — I like understanding the math beneath the frameworks, not just calling the API.
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Internships-brightgreen?style=for-the-badge" alt="Open to internships"/>
+  <img src="https://img.shields.io/badge/Graduating-2027-blue?style=for-the-badge" alt="Graduating 2027"/>
+  <img src="https://img.shields.io/badge/Based%20in-Chennai-orange?style=for-the-badge" alt="Chennai"/>
+</p>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=streamlit&logoColor=white" alt="Portfolio"/></a>
+  <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
+
 ---
 
-### About Me
+### 🧰 Tech Stack
 
-- 🎓 Graduating 2027, Anna University-affiliated college, Chennai
-- 🛠️ chasing ML/AI Engineer internships at early-stage Chennai startups instead
-- 🔍 Prefer building things end-to-end and debugging *why* something fails, not just shipping what works
-- 📫 Reach me here on GitHub or via the links below
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LightGBM-2b6cb0?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gradio-FF7C00?style=for-the-badge&logo=gradio&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+</p>
 
 ---
 
-### Featured Projects
+### 🚀 Featured Projects
 
-**🔎 Industrial Anomaly Detection (MVTec AD)**
-Multi-phase pipeline that started with a PyTorch autoencoder (surface-crack detection, ~0.95 AUC) and hit a wall scaling to six MVTec categories — reconstruction-based scoring capped out at 0.63–0.70 AUC because a high-capacity bottleneck reconstructs defects almost as cleanly as healthy images. Pivoted to **PatchCore**: frozen ResNet-18 backbone, multi-scale patch embeddings, 10% coreset subsampling, nearest-neighbor memory bank, Youden's J threshold optimization. Integrated into my portfolio app with HuggingFace Hub model loading.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🔎 Industrial Anomaly Detection**
+<br/>
+<img src="https://img.shields.io/badge/PatchCore-6f42c1?style=flat-square"/> <img src="https://img.shields.io/badge/MVTec%20AD-6f42c1?style=flat-square"/> <img src="https://img.shields.io/badge/ResNet--18-6f42c1?style=flat-square"/>
+
+Started with a PyTorch autoencoder (~0.95 AUC on surface cracks), hit an AUC ceiling (0.63–0.70) scaling to six MVTec categories — diagnosed the failure: a high-capacity bottleneck reconstructs defects almost as cleanly as healthy images. Pivoted to **PatchCore**: frozen ResNet-18 backbone, multi-scale patch embeddings, 10% coreset subsampling, nearest-neighbor memory bank, Youden's J threshold optimization.
+
+</td>
+<td width="50%" valign="top">
 
 **💳 Fraud Detection Pipeline**
-LightGBM + CalibratedClassifierCV on 6.3M transactions, SMOTE for class imbalance, SHAP waterfall plots for explainability — 99.75% recall. Deployed as a Gradio app on HuggingFace Spaces.
+<br/>
+<img src="https://img.shields.io/badge/LightGBM-2b6cb0?style=flat-square"/> <img src="https://img.shields.io/badge/SHAP-2b6cb0?style=flat-square"/> <img src="https://img.shields.io/badge/SMOTE-2b6cb0?style=flat-square"/>
 
-**🧠 Neural Network from Scratch (NumPy only)**
-4-layer network (784→90→30→10) trained on MNIST — He initialization, hand-derived backpropagation, L2 regularization, softmax + cross-entropy gradients. No autograd, no shortcuts.
+LightGBM + CalibratedClassifierCV on 6.3M transactions, SMOTE for class imbalance, SHAP waterfall plots for explainability. **99.75% recall.** Deployed as a live Gradio app on HuggingFace Spaces.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**🧠 Neural Net from Scratch (NumPy only)**
+<br/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square"/> <img src="https://img.shields.io/badge/MNIST-013243?style=flat-square"/> <img src="https://img.shields.io/badge/Backprop-013243?style=flat-square"/>
+
+4-layer network (784→90→30→10) — He initialization, hand-derived backpropagation, L2 regularization, softmax + cross-entropy gradients. No autograd, no shortcuts.
+
+</td>
+<td width="50%" valign="top">
 
 **🌐 ML Portfolio App**
-Streamlit app hosting the above projects — custom theming system with CSS variables, model assets pulled from a private HuggingFace Hub repo, CPU-only torch wheel to cut cold-start time on Streamlit Cloud.
+<br/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square"/> <img src="https://img.shields.io/badge/HF%20Hub-FF4B4B?style=flat-square"/>
+
+Streamlit app hosting all my projects — custom theming with CSS variables, model assets pulled from a private HuggingFace Hub repo, CPU-only torch wheel to cut cold-start time on Streamlit Cloud.
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Currently Exploring
+### 📚 Currently Exploring
 
-Transformer internals (Q/K/V projections, decoder-only vs. encoder-decoder tradeoffs), RAG vs. LoRA tradeoffs, KV caching, and attention mechanisms like CBAM.
+<p align="center">
+  <img src="https://img.shields.io/badge/Transformers-4B0082?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Attention%20(Q%2FK%2FV)-4B0082?style=flat-square"/>
+  <img src="https://img.shields.io/badge/RAG%20vs%20LoRA-4B0082?style=flat-square"/>
+  <img src="https://img.shields.io/badge/KV%20Caching-4B0082?style=flat-square"/>
+  <img src="https://img.shields.io/badge/CBAM-4B0082?style=flat-square"/>
+</p>
 
 ---
 
-<p align="center"><i>Open to ML/AI Engineer internship opportunities — let's talk.</i></p>
+### 📊 GitHub Stats
 
-<!--
-**NLCfpeaccount/NLCfpeaccount** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NLCfpeaccount&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" height="165"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NLCfpeaccount&theme=radical&hide_border=true" alt="GitHub Streak" height="165"/>
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NLCfpeaccount&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20to-ML%2FAI%20Engineer%20Internships-success?style=for-the-badge"/>
+</p>
