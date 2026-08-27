@@ -9,7 +9,7 @@ Final-year B.Tech (AI & Data Science) student in Chennai — I like understandin
 ### About Me
 
 - 🎓 Graduating 2027, Anna University-affiliated college, Chennai
-- 🛠️ Opted out of campus placements — chasing ML/AI Engineer internships at early-stage Chennai startups instead
+- 🛠️ chasing ML/AI Engineer internships at early-stage Chennai startups instead
 - 🔍 Prefer building things end-to-end and debugging *why* something fails, not just shipping what works
 - 📫 Reach me here on GitHub or via the links below
 
